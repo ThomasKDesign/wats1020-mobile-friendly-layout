@@ -10,7 +10,11 @@
         <meta name="description" content="Mobile friendly layout experiments.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
@@ -20,10 +24,34 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body>
+      <body>
+        <div class="header" id="page-header">
+          <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom" id="navbar">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                <div class="navbar-brand">
+                   <h3>Mobile Friendly Layout</h3>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav navbar-right" id="navbar-right">
+                    <li><a href="#services">Learn More</a></li>
+                    <li><a href="#latest-projects">About Us</a></li>
+                    <li><a href="#our-clients">FAQ</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#bannerformmodal">Links</a></li>
+                </ul>
+            </div>
+        </nav>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -36,7 +64,74 @@
                 what you hope to see in your final projects header (title, score,
                 etc.).
       -->
-
+      <div class="container-fluid" >
+           <h1>12 Women Pioneers in Computer Sciece and Programming</h1>
+            <!--  Column 1 -->
+            <div class="row" description="content" id="3-columns">
+              <div class="col-sm-3" id="page-description">
+                <p>"This page is meant to provide an experimental
+                  proof of concept for a mobile-friendly layout that can be used
+                  in this example, to highlight the women in computer science and programming."</p>
+              </div>
+             
+              <!--  Column 2: A list of styled links.-->                  
+              <div class="col-sm-6" id="">
+                <ul class="links">
+                 
+              </div>
+             
+              <!--  Column 3: A table of high scores.-->                  
+              <div class="col-sm-3" id="table">
+                 <div class="table-responsive">
+                    <table class="table">
+                      <h3>Top 5 Players Scores!</h3>
+                         <tbody>
+                              <tr>
+                                <td>Tyler Smooth</td>                                
+                                <td>12 out of 12</td>
+                              </tr>
+                              <tr>
+                                <td>Tanae Johnson</td>                                
+                                <td>12 out of 12</td>
+                              </tr>
+                              <tr>
+                                <td>Hannah Marie K</td>                                
+                                <td>12 out of 12</td>
+                              </tr>
+                                 <tr>
+                                <td>Olivia Good</td>                                
+                                <td>12 out of 12</td>
+                              </tr>
+                              <tr>
+                                <td>Sofia Carter</td>                            
+                                <td>12 out of 12</td>
+                              </tr>
+                         </tbody>
+                    </table>
+                 </div>
+              </div>
+           </div>
+        </div> <!-- /.container-fluid -->
+        
+     <!-- footer -->  
+      <div class="footer" data-role="footer" style="text-align:center;">
+        <div class="container-fluid">
+          <p>This is an exercise in mobile friendly layout.</p>
+          <p>Thomas Kaiaua. WATS1020 Seattle University, March, 2016.</p>
+          <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add Me On Facebook</a>
+          <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add Me On Twitter</a>
+          <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Add Me On Instagram</a>
+        </div><!-- /.container-fluid -->
+     </div><!-- /.footer -->  
+        
+         
+   
+      
+       
+       
+    
+  
+  
       <!-- TODO:
 
                 Create a mobile friendly gallery layout that displays a set of
